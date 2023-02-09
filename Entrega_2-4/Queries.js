@@ -10,7 +10,7 @@ db.restaurants.find({grades: {$elemMatch: { score: {$gt: 80, $lte: 100}}}});
 db.restaurants.find({'address.coord.1': {$gt: -95.754168}});
 db.restaurants.find({$and: [{cuisine: {$not: {$regex: /American/}}}, {grades: {$elemMatch: { score: {$gt: 70}}}}, {'address.coord.1': {$gt: -65.754168}}]});
 db.restaurants.find({$nor: [{cuisine: {$regex:/American\s/} }, {grades:{$not:{$elemMatch:{score:{$gt:70}}}}}, {"address.coord.0" : {$gt : -65.754168}}]});
-db.restaurants.find({$and: [{cuisine: {$not: {$regex: /American/}}}, {grades: {$elemMatch: { grade: 'A'}}}, {borough: {$not: {$regex: /Brooklyn/}}}]});.sort({cuisine: -1});
+db.restaurants.find({$and: [{cuisine: {$not: {$regex: /American/}}}, {grades: {$elemMatch: { grade: 'A'}}}, {borough: {$not: {$regex: /Brooklyn/}}}]}).sort({cuisine: -1});
 db.restaurants.find( {name: {$regex: /^Wil/}} , {restaurant_id: 1, name: 1, borough: 1, cuisine: 1, _id:0});
 db.restaurants.find( {name: {$regex: /ces$/}} , {restaurant_id: 1, name: 1, borough: 1, cuisine: 1, _id:0});
 db.restaurants.find( {name: {$regex: /Reg/}} , {restaurant_id: 1, name: 1, borough: 1, cuisine: 1, _id:0});
