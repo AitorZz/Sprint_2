@@ -1,4 +1,4 @@
-# Node - Sprint2 Node Bàsics
+# Node - Sprint 2 Node Bàsics
 ## Objectius
 Aprofundir en les bases de dades relacionals amb Mysql i en les no relacionals amb MongoDB.
 Generar correctament els scripts de creació de les bases de dades.
