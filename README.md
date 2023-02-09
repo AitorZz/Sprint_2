@@ -7,3 +7,5 @@ Fer adequadament consultes per tal d'accedir a les dades.
 # Entrega 2.2: MySQL queries
 # Entrega 2.3: Estructura de dades MongoDB
 # Entrega 2.4: MongoDB queries
+
+#test
